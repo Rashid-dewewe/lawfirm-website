@@ -208,7 +208,8 @@
             </div>
             <div class="input-group my-3">
                 <span class="input-group-text"><i class="bi bi-phone"></i></span>
-                <input type="tel" class="form-control" required placeholder="255 678 575 538" maxlength="12" pattern="/^ d{12}[0-9]^/" title="only digit is allowed, enter digit only">
+                <input type="tel" class="form-control" required placeholder="0678575538" maxlength="10" pattern="^\d{10}$"
+                title="only digit is allowed, enter digit only">
             </div>
             <label for="message" class="form-label">Message</label>
             <textarea name="message" id="message" class="form-control" required rows="4" placeholder="Leave a message here"></textarea>
