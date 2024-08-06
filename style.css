@@ -1,0 +1,157 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --webkit-user-select:none;
+}
+
+.bra {
+    color: black;
+}
+
+.nd {
+    color:hotpink;
+}
+
+#welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+    linear-gradient(
+        to right,
+        rgb(0 0 0 / 0),
+        rgb(0 0 0 / 0.5)
+    ),
+    url("images/background/law.jpeg");
+    background-size: cover;
+    background-position:top 25% left;
+    height:60vh;
+}
+
+
+#about-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#about-cont .about-img,
+#about-cont .about-intro {
+    width: 48%;
+    height: 40%;
+}
+
+#about-cont .about-img img {
+    width: 100%;
+    height: auto;
+}
+
+#about-cont .about-intro p {
+    font-size: 15px;
+}
+
+#about-cont .about-intro abbr {
+    font-size: 12px;
+}
+
+.service-card, .testimonial, .blog-post
+    {
+        padding: 20px;
+        margin: 10px;
+    }
+
+.service-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+
+#testimonials{
+    background-color:#d4eaff3b ;
+}
+
+#testimo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+}
+
+.testimonial {
+    width: 30%;
+    border-radius: 5px;
+}
+
+#blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.blog-post {
+    border-radius: 5px;
+}
+
+
+button[type='submit'] {
+    border-radius: 1.5rem;
+}
+
+
+
+@media (max-width:576px) {
+
+    #about-cont .about-img,
+    #about-cont .about-intro {
+    width: 100%;
+    }
+
+    #about-cont .about-intro h4{
+        font-size: 16px;
+    }
+
+    #about-cont .about-intro p {
+        font-size: 18px;
+    }
+
+    #about-cont .about-intro abbr {
+        font-size:18px;
+    }
+
+    #services .service-card {
+        width: 100%;
+    }
+
+    .testimonial {
+        width: 100%;
+        margin: .5rem;
+    }
+}
+
+
+@media (min-width:768px){
+    #s {
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            justify-content: center !important;
+            align-items: center !important;
+            flex: 1 !important;
+        }
+    
+        #testimo {
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            justify-content: center !important;
+            align-items: center !important;
+            flex: 1 calc(33%)!important;
+        }
+
+
+    }
